@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- BOXICONS CDD -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <!-- FAVICON -->
+     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+     <!-- Remix Icon CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+ 
+     <!-- BOXICONS CDD -->
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+ 
+     <!-- Google Fonts CDN -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+/* Hero Section Styles */
+.hero {
+    background-color: #13131A;
+    padding: 60px 0;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero h2 {
+    color: var(--primary-color);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: var(--text-color);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    color: #13131a;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    border: 2px solid #29fd53;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    color: #2f2f2f;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.team-member p {
+    color: #666;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #13131a;
+    padding: 20px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+
+    .container {
+        padding: 10px;
+    }
+    
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .team-members {
+        flex-direction: column;
+    }
+
+    .hero {
+        margin-top: 0;
+    }
+
+    .container-hero {
+       max-width: 370px;
+    }
+
+    .about {
+        margin-top: 0 !important;
+    }
+
+    .team-members {
+        margin-top: 0px !important;
+        margin-bottom: 88px;
+    }
+}
+
+    </style>
+
+
+</head>
+
+
+<body>
+    
+
+    <header>
+        <a href="index.html" class="logo"></i><span><img src="media/logo.svg" class="image-logo" alt=""></span>
+        </a>
+
+        <ul class="navbar">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active" style="color: #29fd53;">About Us</a></li>
+            <li><a href="yourMusic.html">Your Music</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="sign.html" class="user"><i class="ri-user-line"></i>Sign In</a>
+            <a href="register.html" class="register">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+
+    </header>
+
+    <section class="hero">
+        <div class="container container-hero">
+            <h2>Welcome to Our Company</h2>
+            <p>At our company, we are passionate about music and dedicated to creating an exceptional platform for music enthusiasts like you. Our mission is to provide a unique and immersive musical experience that transcends boundaries and connects people through the power of sound.</p>
+            <p>With a vast library of songs from various genres, curated playlists, and personalized recommendations, we strive to provide a seamless and tailored music journey that resonates with your unique taste.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container container-about">
+            <h2>About Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="media\team-member1.png" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="media\team-member2.png" alt="Team Member 2">
+                    <h3>Mark Smith</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <img src="media\team-member3 .png" alt="Team Member 3">
+                    <h3>Mike Johnson</h3>
+                    <p>COO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3 class="footer-heading"><span><img src="media/logo.svg" class="image-logo" alt=""></span></h3>
+            <p class="footer-description">Melodies Amplified, Rhythms Elevated.</p>
+            <ul class="footer-social">
+              <li><a href="#"><i class="fab fa-facebook-f"><img src="media\facebook.svg" alt=""></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"><img src="media\twitter.svg" alt=""></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"><img src="media\instagram.svg" alt=""></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Upload</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Contact</h3>
+            <ul class="footer-contact">
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+              <li><i class="fas fa-phone"></i> +1 123-456-7890</li>
+              <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Subscribe</h3>
+            <form class="footer-subscribe-form">
+              <input type="email" style="font-size: large;" name="email" placeholder="Enter your email" required>
+              <button type="submit" style="font-size: large; font-weight: 500;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>&copy; 2023 Naija Flavour. All rights reserved.</p>
+          </div>
+          <div class="footer-bottom-right">
+            <ul class="footer-bottom-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+
+<!-- JS LINK -->
+<script type="text/javascript" src="js\script.js"></script>
+<!-- BOXICONS COMPONENTS -->
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- BOXICONS CDD -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 16px;
+            color: #555555;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #333333;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #222222;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"></i><span><img src="media/logo.svg" class="image-logo" alt=""></span>
+        </a>
+
+        <ul class="navbar">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="yourMusic.html">Your Music</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active" style="color: #29fd53;">Contact</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="sign.html" class="user"><i class="ri-user-line"></i>Sign In</a>
+            <a href="register.html" class="register">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+
+    </header>
+
+    <div class="container">
+        <h1>Contact</h1>
+        <form action="submit.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3 class="footer-heading"><span><img src="media/logo.svg" class="image-logo" alt=""></span></h3>
+            <p class="footer-description">Melodies Amplified, Rhythms Elevated.</p>
+            <ul class="footer-social">
+              <li><a href="#"><i class="fab fa-facebook-f"><img src="media\facebook.svg" alt=""></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"><img src="media\twitter.svg" alt=""></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"><img src="media\instagram.svg" alt=""></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Upload</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Contact</h3>
+            <ul class="footer-contact">
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+              <li><i class="fas fa-phone"></i> +1 123-456-7890</li>
+              <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Subscribe</h3>
+            <form class="footer-subscribe-form">
+              <input type="email" style="font-size: large;" name="email" placeholder="Enter your email" required>
+              <button type="submit" style="font-size: large; font-weight: 500;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>&copy; 2023 Naija Flavour. All rights reserved.</p>
+          </div>
+          <div class="footer-bottom-right">
+            <ul class="footer-bottom-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
+
+    <!-- JS LINK -->
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- BOXICONS COMPONENTS -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+</body>
+</html>

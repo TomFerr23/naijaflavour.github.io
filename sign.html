@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- BOXICONS CDD -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <style>
+    body {
+      background-color: #1b1b1b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .form-group button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: #29fd53;
+      color: #000000;
+      border: none;
+      cursor: pointer;
+      font-size: large;
+      border-radius: 5px;
+    }
+
+    button:hover {
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"></i><span><img src="media/logo.svg" class="image-logo" alt=""></span>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Your Music</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="sign.html" class="user active" style="color: #29fd53;"><i class="ri-user-line"></i>Sign In</a>
+            <a href="register.html" class="register">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+
+    </header>
+
+
+  <div class="container">
+    <h1 style="color: #29fd53;">Sign In</h1>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" >Sign In</button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3 class="footer-heading"><span><img src="media/logo.svg" class="image-logo" alt=""></span></h3>
+        <p class="footer-description">Melodies Amplified, Rhythms Elevated.</p>
+        <ul class="footer-social">
+          <li><a href="#"><i class="fab fa-facebook-f"><img src="media\facebook.svg" alt=""></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"><img src="media\twitter.svg" alt=""></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"><img src="media\instagram.svg" alt=""></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-heading">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Upload</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-heading">Contact</h3>
+        <ul class="footer-contact">
+          <li><i class="fas fa-envelope"></i> info@example.com</li>
+          <li><i class="fas fa-phone"></i> +1 123-456-7890</li>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-heading">Subscribe</h3>
+        <form class="footer-subscribe-form">
+          <input type="email" style="font-size: large;" name="email" placeholder="Enter your email" required>
+          <button type="submit" style="font-size: large; font-weight: 500;">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <p>&copy; 2023 Naija Flavour. All rights reserved.</p>
+      </div>
+      <div class="footer-bottom-right">
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+<!-- JS LINK -->
+<script type="text/javascript" src="js\script.js"></script>
+<!-- BOXICONS COMPONENTS -->
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

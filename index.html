@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naija Flavour</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- BOXICONS CDD -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"></i><span><img src="media/logo.svg" class="image-logo" alt=""></span>
+        </a>
+
+        <ul class="navbar">
+            <li class="active"><a href="#" class="active" style="color: #29fd53;">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="yourMusic.html">Your Music</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="sign.html" class="user"><i class="ri-user-line"></i>Sign In</a>
+            <a href="register.html" class="register">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+        <div class="container hero-container">
+            <img src="media/hero.png" class="hero-img" alt="hero">
+            <div class="hero-text">
+                <h1>The <br> Real Sound</h1>
+                <p>Experience sound performance you never tried before. <br> Dive into mesmerizing soundscapes.</p>
+                <div class="button-wrap">
+                <a href="#sub-hero" class="btn">Get Started</a>
+                <a href="about.html" class="btn-2">Learn More</a>
+            </div>
+            </div>
+        </div>
+    </main>
+
+
+
+   <!-- SUB-HERO SECTION -->
+<section class="sub-hero" id="sub-hero">
+  <div class="container-sub-hero">
+    <div class="sub-hero-content">
+      <div class="sub-hero-image">
+        <img src="media\hero2.png" alt="Sub-Hero Image" />
+        <div class="sub-hero-overlay">
+          <h2 class="h2-sub-hero">Amplify Your Sound: Share Your Melodies with the World!</h2>
+          <p class="h2-sub-hero">Unleash Your Musical Talent: <br> Join the Global Stage of Harmonious Vibes</p>
+          <!-- Upload Section -->
+<section class="upload-section">
+  <div class="container-sub-hero">
+    <h2>Upload Your Beats</h2>
+    <input type="file" id="audio-file" accept="audio/*">
+    <button id="upload-button">Upload</button>
+  </div>
+</section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <!-- CARD MUSIC PLAYER -->
+
+    <div class="grid-container">
+        <div class="card">
+    <div class="controls">
+      <img src="media\card1.png" class="cover-image" alt="Cover Image">
+      <div class="play-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></div>
+      <div class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></div>
+    </div>
+    <div class="song-info">
+      <div class="song-title">Song Title</div>
+      <div class="artist">Artist Name</div>
+    </div>
+    <input type="range" min="0" max="100" value="0" class="slider">
+    <div class="duration">Duration: <span class="current-time">0:00</span></div>
+    <audio src="media\Flashing Lights.mp3" class="audio"></audio>
+  </div>
+
+
+        <!-- Add more card elements here -->
+
+        
+            <div class="card">
+              <div class="controls">
+                <img src="media\card2.png" class="cover-image" alt="Cover Image">
+                <div class="play-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></div>
+                <div class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></div>
+              </div>
+              <div class="song-info">
+                <div class="song-title">Song Title</div>
+                <div class="artist">Artist Name</div>
+              </div>
+              <input type="range" min="0" max="100" value="0" class="slider">
+              <div class="duration">Duration: <span class="current-time">0:00</span></div>
+              <audio src="media\Beautiful.mp3" class="audio"></audio>
+            </div>
+
+            
+                <div class="card">
+                  <div class="controls">
+                    <img src="media\card3.png" class="cover-image" alt="Cover Image">
+                    <div class="play-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></div>
+                    <div class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></div>
+                  </div>
+                  <div class="song-info">
+                    <div class="song-title">Song Title</div>
+                    <div class="artist">Artist Name</div>
+                  </div>
+                  <input type="range" min="0" max="100" value="0" class="slider">
+                  <div class="duration">Duration: <span class="current-time">0:00</span></div>
+                  <audio src="media\Bullet Train .mp3" class="audio"></audio>
+                </div>
+
+
+                
+                    <div class="card">
+                      <div class="controls">
+                        <img src="media\card4.png" class="cover-image" alt="Cover Image">
+                        <div class="play-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></div>
+                        <div class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></div>
+                      </div>
+                      <div class="song-info">
+                        <div class="song-title">Song Title</div>
+                        <div class="artist">Artist Name</div>
+                      </div>
+                      <input type="range" min="0" max="100" value="0" class="slider">
+                      <div class="duration">Duration: <span class="current-time">0:00</span></div>
+                      <audio src="media\Boys a liar.mp3" class="audio"></audio>
+                    </div>
+
+    </div>
+
+     
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3 class="footer-heading"><span><img src="media/logo.svg" class="image-logo" alt=""></span></h3>
+          <p class="footer-description">Melodies Amplified, Rhythms Elevated.</p>
+          <ul class="footer-social">
+            <li><a href="#"><i class="fab fa-facebook-f"><img src="media\facebook.svg" alt=""></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"><img src="media\twitter.svg" alt=""></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"><img src="media\instagram.svg" alt=""></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="yourMusic.html">Music</a></li>
+            <li><a href="#">Upload</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-envelope"></i> info@example.com</li>
+            <li><i class="fas fa-phone"></i> +1 123-456-7890</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Subscribe</h3>
+          <form class="footer-subscribe-form">
+            <input type="email" style="font-size: large;" name="email" placeholder="Enter your email" required>
+            <button type="submit" style="font-size: large; font-weight: 500;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>&copy; 2023 Naija Flavour. All rights reserved.</p>
+        </div>
+        <div class="footer-bottom-right">
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  
+    
+
+
+   
+    
+
+
+
+
+
+
+
+<!-- CARD MUSIC PLAYER JS -->
+
+<script>
+
+// Get DOM elements
+const playButtons = document.querySelectorAll('.play-button');
+const pauseButtons = document.querySelectorAll('.pause-button');
+const sliders = document.querySelectorAll('.slider');
+const currentTimeElements = document.querySelectorAll('.current-time');
+const audios = document.querySelectorAll('.audio');
+
+// Set initial values for each card
+let isPlaying = Array.from({ length: playButtons.length }).fill(false);
+let currentTimes = Array.from({ length: playButtons.length }).fill(0);
+let durations = Array.from({ length: playButtons.length });
+
+let currentPlayingIndex = null; // Track the index of the currently playing song
+
+// Function to update the slider and current time for a card
+function updateSlider(index) {
+  const slider = sliders[index];
+  const currentTimeElement = currentTimeElements[index];
+  const currentTime = currentTimes[index];
+  const duration = durations[index];
+
+  const percent = (currentTime / duration) * 100;
+  slider.value = percent;
+  const minutes = Math.floor(currentTime / 60);
+  const seconds = Math.floor(currentTime % 60);
+  currentTimeElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+// Function to handle play button click for a card
+function handlePlay(index) {
+  if (currentPlayingIndex !== null && currentPlayingIndex !== index) {
+    // Pause the previously playing song
+    isPlaying[currentPlayingIndex] = false;
+    audios[currentPlayingIndex].pause();
+    currentTimes[currentPlayingIndex] = 0; // Reset current time for the previous song
+  }
+
+  if (isPlaying[index]) {
+    // Pause the current song
+    isPlaying[index] = false;
+    audios[index].pause();
+  } else {
+    // Play the current song
+    isPlaying[index] = true;
+    audios[index].currentTime = currentTimes[index];
+    audios[index].play();
+    currentPlayingIndex = index;
+  }
+}
+
+// Function to handle pause button click for a card
+function handlePause(index) {
+  isPlaying[index] = false;
+  audios[index].pause();
+}
+
+// Function to handle slider input for a card
+function handleSliderInput(index) {
+  const slider = sliders[index];
+  const percent = slider.value;
+  currentTimes[index] = (percent / 100) * durations[index];
+  updateSlider(index);
+
+  audios[index].currentTime = currentTimes[index];
+  if (isPlaying[index]) {
+    audios[index].play();
+  }
+}
+
+// Function to handle fast-forwarding and going back for a card
+function handleSliderChange(index) {
+  const slider = sliders[index];
+  const percent = slider.value;
+  currentTimes[index] = (percent / 100) * durations[index];
+  updateSlider(index);
+
+  audios[index].currentTime = currentTimes[index];
+  if (isPlaying[index]) {
+    audios[index].play();
+  }
+}
+
+// Function to update the player state for a card
+function updatePlayer(index) {
+  if (isPlaying[index]) {
+    currentTimes[index] = audios[index].currentTime;
+    if (currentTimes[index] >= durations[index]) {
+      currentTimes[index] = durations[index];
+      isPlaying[index] = false;
+      audios[index].pause();
+    }
+    updateSlider(index);
+  }
+}
+
+// Add event listeners for each card
+for (let i = 0; i < playButtons.length; i++) {
+  playButtons[i].addEventListener('click', () => handlePlay(i));
+  pauseButtons[i].addEventListener('click', () => handlePause(i));
+  sliders[i].addEventListener('input', () => handleSliderInput(i));
+  sliders[i].addEventListener('change', () => handleSliderChange(i));
+  audios[i].addEventListener('loadedmetadata', () => {
+    durations[i] = audios[i].duration;
+  });
+  setInterval(() => updatePlayer(i), 1000);
+}
+
+</script>
+
+<script>
+
+//JS TO CREATE A NEW CARD
+
+// Get the necessary elements
+const uploadButton = document.getElementById('upload-button');
+const audioFileInput = document.getElementById('audio-file');
+const gridContainer = document.querySelector('.grid-container');
+
+// Function to handle file upload
+const handleUpload = () => {
+  const file = audioFileInput.files[0];
+  
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const audioURL = e.target.result;
+      
+      // Create a new card with the uploaded audio
+      const card = document.createElement('div');
+      card.className = 'card';
+      
+      const controls = document.createElement('div');
+      controls.className = 'controls';
+      
+      const coverImage = document.createElement('img');
+      coverImage.className = 'cover-image';
+      coverImage.src = 'media/card-default.png';
+      coverImage.alt = 'Cover Image';
+      
+      const playButton = document.createElement('div');
+      playButton.className = 'play-button';
+      playButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg>';
+      
+      const pauseButton = document.createElement('div');
+      pauseButton.className = 'pause-button';
+      pauseButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg>';
+      
+      const songInfo = document.createElement('div');
+      songInfo.className = 'song-info';
+      
+      const songTitle = document.createElement('div');
+      songTitle.className = 'song-title';
+      songTitle.textContent = 'Song Title';
+      
+      const artist = document.createElement('div');
+      artist.className = 'artist';
+      artist.textContent = 'Artist Name';
+      
+      const slider = document.createElement('input');
+      slider.type = 'range';
+      slider.min = '0';
+      slider.max = '100';
+      slider.value = '0';
+      slider.className = 'slider';
+      
+      const duration = document.createElement('div');
+      duration.className = 'duration';
+      duration.innerHTML = 'Duration: <span class="current-time">0:00</span>';
+      
+      const audio = document.createElement('audio');
+      audio.src = audioURL;
+      audio.className = 'audio';
+      
+      // Append elements to the card
+      controls.appendChild(coverImage);
+      controls.appendChild(playButton);
+      controls.appendChild(pauseButton);
+      
+      songInfo.appendChild(songTitle);
+      songInfo.appendChild(artist);
+      
+      card.appendChild(controls);
+      card.appendChild(songInfo);
+      card.appendChild(slider);
+      card.appendChild(duration);
+      card.appendChild(audio);
+      
+      // Add the new card to the grid container
+      gridContainer.appendChild(card);
+    };
+    reader.readAsDataURL(file);
+  }
+};
+
+// Add event listener to the upload button
+uploadButton.addEventListener('click', handleUpload);
+
+
+
+
+
+// Get the form element
+const form = document.querySelector('.subscribe-form');
+
+// Get the input element
+const emailInput = form.querySelector('input[type="email"]');
+
+// Get the submit button
+const submitButton = form.querySelector('button[type="submit"]');
+
+// Add event listener to the form on submit
+form.addEventListener('submit', (e) => {
+  e.preventDefault(); // Prevent form submission
+
+  const email = emailInput.value; // Get the entered email
+
+  // Here, you can perform validation or send the email to the server
+
+  // Clear the input field
+  emailInput.value = '';
+
+  // Display a success message or perform any desired action
+  alert(`Thank you for subscribing with email: ${email}`);
+});
+
+
+
+
+
+
+
+
+
+</script>
+  
+
+
+    
+
+<!-- JS LINK -->
+<script type="text/javascript" src="js/script.js"></script>
+
+<!-- BOXICONS COMPONENTS -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+
+
+
+
+</body>
+</html>

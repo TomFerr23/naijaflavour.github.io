@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Music</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- BOXICONS CDD -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+       body {
+  background-color: black;
+  color: white;
+}
+
+.music-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.category-section {
+  margin-bottom: 20px;
+}
+
+.category-section h2 {
+  margin-top: 0;
+}
+
+.genre-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.genre-list li {
+  cursor: pointer;
+}
+
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.song {
+  width: calc(50% - 10px);
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.song img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.song h3, .song p {
+  margin: 10px 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.play-button, .pause-button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.play-button {
+  background-image: url("play-button.png");
+  background-size: cover;
+  background-color: transparent;
+}
+
+.pause-button {
+  background-image: url("pause-button.png");
+  background-size: cover;
+  display: none;
+  background-color: transparent;
+}
+
+.slider-bar {
+  width: 100%;
+}
+    </style>
+
+
+
+
+</head>
+
+<body>
+    
+    <header>
+        <a href="index.html" class="logo"></i><span><img src="media/logo.svg" class="image-logo" alt=""></span>
+        </a>
+
+        <ul class="navbar">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="yourMusic.html" class="active" style="color: #29fd53;">Your Music</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="main">
+            <a href="sign.html" class="user"><i class="ri-user-line"></i>Sign In</a>
+            <a href="register.html" class="register">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+
+    </header>
+
+    <div class="header" style="margin-top: 100px;">
+        <h1 style="text-align: center;">Your Music</h1>
+    </div>
+
+
+
+    
+    <div class="music-page">
+        <div class="search-bar">
+          <input type="text" placeholder="Search music...">
+        </div>
+        <div class="category-section">
+          <h2>Categories</h2>
+          <ul class="genre-list">
+            <li class="genre">Genre 1</li>
+            <li class="genre">Genre 2</li>
+            <li class="genre">Genre 3</li>
+            <!-- Add more categories here -->
+          </ul>
+        </div>
+        <div class="song-list">
+          <div class="song">
+            <img src="media\song.png" alt="Song 1">
+            <h3>Song 1</h3>
+            <p>Artist 1</p>
+            <audio class="audio-element">
+              <source src="media\Bullet Train .mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <button class="play-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></button>
+              <button class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></button>
+              <input type="range" class="slider-bar" min="0" max="100" value="0">
+            </div>
+          </div>
+          <div class="song">
+            <!-- Add more song elements here -->
+            <img src="media\song-2.png" alt="Song 2">
+            <h3>Song 2</h3>
+            <p>Artist 2</p>
+            <audio class="audio-element">
+              <source src="media\Flashing Lights.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <button class="play-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></button>
+              <button class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></button>
+              <input type="range" class="slider-bar" min="0" max="100" value="0">
+            </div>
+          </div>
+          <!-- Add more songs here -->
+
+          <div class="song">
+            <!-- Add more song elements here -->
+            <img src="media\song-3.png" alt="Song 3">
+            <h3>Song 3</h3>
+            <p>Artist 3</p>
+            <audio class="audio-element">
+              <source src="media\Boys a liar.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <button class="play-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></button>
+              <button class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></button>
+              <input type="range" class="slider-bar" min="0" max="100" value="0">
+            </div>
+          </div>
+
+          <div class="song">
+            <!-- Add more song elements here -->
+            <img src="media\song-4.png" alt="Song 4">
+            <h3>Song 4</h3>
+            <p>Artist 4</p>
+            <audio class="audio-element">
+              <source src="media\Beautiful.mp3" type="audio/mpeg">
+            </audio>
+            <div class="controls">
+              <button class="play-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="m9 17 8-5-8-5z"></path></svg></button>
+              <button class="pause-button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: #29fd53;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M13 9h2v6h-2zM9 9h2v6H9z"></path></svg></button>
+              <input type="range" class="slider-bar" min="0" max="100" value="0">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3 class="footer-heading"><span><img src="media/logo.svg" class="image-logo" alt=""></span></h3>
+            <p class="footer-description">Melodies Amplified, Rhythms Elevated.</p>
+            <ul class="footer-social">
+              <li><a href="#"><i class="fab fa-facebook-f"><img src="media\facebook.svg" alt=""></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"><img src="media\twitter.svg" alt=""></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"><img src="media\instagram.svg" alt=""></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Explore</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="yourMusic.html">Music</a></li>
+              <li><a href="#">Upload</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Contact</h3>
+            <ul class="footer-contact">
+              <li><i class="fas fa-envelope"></i> info@example.com</li>
+              <li><i class="fas fa-phone"></i> +1 123-456-7890</li>
+              <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-heading">Subscribe</h3>
+            <form class="footer-subscribe-form">
+              <input type="email" style="font-size: large;" name="email" placeholder="Enter your email" required>
+              <button type="submit" style="font-size: large; font-weight: 500;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>&copy; 2023 Naija Flavour. All rights reserved.</p>
+          </div>
+          <div class="footer-bottom-right">
+            <ul class="footer-bottom-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+       // Get all the song elements
+var songs = document.querySelectorAll(".song");
+
+// Variable to keep track of the currently playing song
+var currentSong = null;
+
+// Function to play a song
+function playSong(song) {
+  var audio = song.querySelector(".audio-element");
+  var playButton = song.querySelector(".play-button");
+  var pauseButton = song.querySelector(".pause-button");
+  var slider = song.querySelector(".slider-bar");
+
+  // If a song is already playing, stop it before playing the new song
+  if (currentSong) {
+    currentSong.pause();
+    currentSong.currentTime = 0;
+    var currentPlayButton = currentSong.parentNode.querySelector(".play-button");
+    var currentPauseButton = currentSong.parentNode.querySelector(".pause-button");
+    currentPlayButton.style.display = "block";
+    currentPauseButton.style.display = "none";
+  }
+
+  // Play the new song
+  audio.play();
+  playButton.style.display = "none";
+  pauseButton.style.display = "block";
+  currentSong = audio;
+
+  // Update the slider position as the song plays
+  audio.addEventListener("timeupdate", function () {
+    var progress = (audio.currentTime / audio.duration) * 100;
+    slider.value = progress;
+  });
+}
+
+// Function to pause a song
+function pauseSong(song) {
+  var audio = song.querySelector(".audio-element");
+  var playButton = song.querySelector(".play-button");
+  var pauseButton = song.querySelector(".pause-button");
+
+  // Pause the song
+  audio.pause();
+  playButton.style.display = "block";
+  pauseButton.style.display = "none";
+}
+
+// Function to fast forward or go back in the song
+function seekSong(song, value) {
+  var audio = song.querySelector(".audio-element");
+  audio.currentTime = audio.duration * (value / 100);
+}
+
+// Add click event listeners to each song
+songs.forEach(function (song) {
+  var playButton = song.querySelector(".play-button");
+  var pauseButton = song.querySelector(".pause-button");
+  var slider = song.querySelector(".slider-bar");
+  var audio = song.querySelector(".audio-element");
+
+  playButton.addEventListener("click", function () {
+    playSong(song);
+  });
+
+  pauseButton.addEventListener("click", function () {
+    pauseSong(song);
+  });
+
+  slider.addEventListener("input", function () {
+    seekSong(song, slider.value);
+  });
+});
+    </script>
+
+
+
+
+      <!-- JS LINK -->
+      <script type="text/javascript" src="js/script.js"></script>
+
+
+<!-- BOXICONS COMPONENTS -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+</body>
+
+</html>

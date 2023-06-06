@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- BOXICONS CDD -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <!-- FAVICON -->
+     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+     <!-- Remix Icon CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+ 
+     <!-- BOXICONS CDD -->
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+ 
+     <!-- Google Fonts CDN -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 200px !important;
+    padding: 20px;
+}
+
+h2 {
+    color: #29fd53;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.btn {
+    padding: 10px 20px;
+    background-color: #29fd53;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: large;
+}
+
+/* JavaScript-Generated Styles */
+.success-message {
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: #FF0000;
+    margin-top: 10px;
+}
+
+
+
+
+
+</style>
+
+
+
+<body>
+    
+   
+
+        <header>
+            <a href="index.html" class="logo">
+                <span><img src="media/logo.svg" class="image-logo" alt=""></span>
+            </a>
+    
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="yourMusic.html">Your Music</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    
+            <div class="main">
+                <a href="sign.html" class="user"><i class="ri-user-line"></i>Sign In</a>
+                <a href="register.html" class="register active" style="color: #29fd53;">Register</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+    
+        <main>
+            <div class="container form-container">
+                <h2>Create an Account</h2>
+                <form class="register-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </main>
+        
+
+        <!- Footer
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-section">
+                <h3 class="footer-heading"><span><img src="media/logo.svg" class="image-logo" alt=""></span></h3>
+                <p class="footer-description">Melodies Amplified, Rhythms Elevated.</p>
+                <ul class="footer-social">
+                  <li><a href="#"><i class="fab fa-facebook-f"><img src="media\facebook.svg" alt=""></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"><img src="media\twitter.svg" alt=""></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"><img src="media\instagram.svg" alt=""></i></a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#">Music</a></li>
+                  <li><a href="#">Upload</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h3 class="footer-heading">Contact</h3>
+                <ul class="footer-contact">
+                  <li><i class="fas fa-envelope"></i> info@example.com</li>
+                  <li><i class="fas fa-phone"></i> +1 123-456-7890</li>
+                  <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h3 class="footer-heading">Subscribe</h3>
+                <form class="footer-subscribe-form">
+                  <input type="email" style="font-size: large;" name="email" placeholder="Enter your email" required>
+                  <button type="submit" style="font-size: large; font-weight: 500;">Subscribe</button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="footer-bottom-left">
+                <p>&copy; 2023 Naija Flavour. All rights reserved.</p>
+              </div>
+              <div class="footer-bottom-right">
+                <ul class="footer-bottom-links">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        -->
+        
+          
+        
+
+        <script>
+            // JavaScript for form validation
+document.querySelector('.register-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    var username = document.getElementById('username').value;
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var confirmPassword = document.getElementById('confirm-password').value;
+
+    var successMessage = document.createElement('p');
+    successMessage.classList.add('success-message');
+    successMessage.textContent = 'Registration successful!';
+
+    var errorMessage = document.createElement('p');
+    errorMessage.classList.add('error-message');
+    errorMessage.textContent = 'Passwords do not match. Please try again.';
+
+    if (password === confirmPassword) {
+        // Simulating form submission success
+        var formContainer = document.querySelector('.form-container');
+        formContainer.appendChild(successMessage);
+    } else {
+        // Simulating form submission error
+        var formContainer = document.querySelector('.form-container');
+        formContainer.appendChild(errorMessage);
+    }
+});
+        </script>
+
+<script src="script.js"></script>
+
+<!-- JS LINK -->
+<script type="text/javascript" src="js\script.js"></script>
+<!-- BOXICONS COMPONENTS -->
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+    </body>
+
+
+</body>
+</html>
